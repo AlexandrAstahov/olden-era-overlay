@@ -1,0 +1,8 @@
+{
+    "case_id": "skill_pick_case_01",
+    "description": "Базовый тест для воина с упором в боевой билд",
+    "archetype": "might",
+    "current_skills": ["Оборона", "Тактика"],
+    "offered_skills": ["Нападение", "Лидерство", "Мудрость"],
+    "expected_best": "Нападение"
+  }
