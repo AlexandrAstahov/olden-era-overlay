@@ -1,0 +1,78 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS (Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Logs and local runtime
+*.log
+logs/
+
+# Local config and secrets
+.env
+.env.*
+*.local
+secrets.json
+
+# PaddleOCR / ML model caches (when added later)
+.paddleocr/
+models/
+*.onnx
+*.pt
+*.pth
+
+# Large or personal screenshot dumps (keep structure, ignore bulk)
+assets/screenshots/raw/*
+!assets/screenshots/raw/.gitkeep
+assets/screenshots/labeled/*
+!assets/screenshots/labeled/.gitkeep
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
