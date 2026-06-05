@@ -1,4 +1,14 @@
-from src.decision.engine import load_skills
+import json
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "data"
+
+
+def load_skills():
+    with open(DATA_DIR / "skills.json", "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def normalize_text(value: str) -> str:

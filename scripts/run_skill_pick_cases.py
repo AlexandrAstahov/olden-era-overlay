@@ -29,25 +29,39 @@ def main():
     for case_file in case_files:
         case = load_case(case_file)
 
-        best, results = choose_best_skill(
+        best, evaluation = choose_best_skill(
             archetype=case["archetype"],
             offered_skills=case["offered_skills"],
             current_skills=case["current_skills"]
         )
 
+        results = evaluation["results"]
         total += 1
         expected = case.get("expected_best")
-        ok = best["skill_name"] == expected
+        ok = best is not None and best["skill_name"] == expected
 
         if ok:
             passed += 1
 
         print(f"[{case['case_id']}] {case['description']}")
         print(f"Архетип: {case['archetype']}")
-        print(f"Текущие навыки: {', '.join(case['current_skills'])}")
-        print(f"Предложенные навыки: {', '.join(case['offered_skills'])}")
+        print(f"Текущие навыки (raw): {', '.join(case['current_skills'])}")
+        print(f"Предложенные навыки (raw): {', '.join(case['offered_skills'])}")
+        print(f"Текущие навыки (normalized): {', '.join(evaluation['normalized_current_skills'])}")
+        print(f"Предложенные навыки (normalized): {', '.join(evaluation['normalized_offered_skills'])}")
+
+        if evaluation["unknown_current_skills"]:
+            print(f"Не распознаны текущие навыки: {', '.join(evaluation['unknown_current_skills'])}")
+
+        if evaluation["unknown_offered_skills"]:
+            print(f"Не распознаны предложенные навыки: {', '.join(evaluation['unknown_offered_skills'])}")
+
+        print("Оценка вариантов:")
+        for item in results:
+            print(f"- {item['skill_name']}: {item['score']}")
+
         print(f"Ожидалось: {expected}")
-        print(f"Получено: {best['skill_name']} (score {best['score']})")
+        print(f"Получено: {best['skill_name'] if best else 'None'}")
         print(f"Результат: {'OK' if ok else 'FAIL'}")
         print()
 

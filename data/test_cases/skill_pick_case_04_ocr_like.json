@@ -1,0 +1,8 @@
+{
+    "case_id": "skill_pick_case_04_ocr_like",
+    "description": "Тест на неидеальные названия навыков, похожие на OCR-вход",
+    "archetype": "magic",
+    "current_skills": [" мудрость "],
+    "offered_skills": ["магия разрушения", " ОБОРОНА", "лидерство "],
+    "expected_best": "Магия Разрушения"
+  }
