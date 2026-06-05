@@ -1,1 +1,92 @@
-{}
+[
+    {
+      "id": "offense",
+      "name_ru": "Нападение",
+      "aliases": ["Нападение"],
+      "category": "might",
+      "priority_group": "core_might",
+      "description": "Базовый боевой навык для усиления урона армии.",
+      "tags": ["damage", "melee", "core"],
+      "perk_slots": []
+    },
+    {
+      "id": "defense",
+      "name_ru": "Оборона",
+      "aliases": ["Оборона"],
+      "category": "might",
+      "priority_group": "core_might",
+      "description": "Базовый защитный навык для повышения выживаемости армии.",
+      "tags": ["tank", "survival", "core"],
+      "perk_slots": []
+    },
+    {
+      "id": "tactics",
+      "name_ru": "Тактика",
+      "aliases": ["Тактика"],
+      "category": "might",
+      "priority_group": "support_might",
+      "description": "Тактический навык для контроля боя и удобного старта сражения.",
+      "tags": ["positioning", "tempo", "support"],
+      "perk_slots": []
+    },
+    {
+      "id": "leadership",
+      "name_ru": "Лидерство",
+      "aliases": ["Лидерство"],
+      "category": "might",
+      "priority_group": "support_might",
+      "description": "Навык усиления армии через мораль и командные бонусы.",
+      "tags": ["morale", "army", "support"],
+      "perk_slots": []
+    },
+    {
+      "id": "wisdom",
+      "name_ru": "Мудрость",
+      "aliases": ["Мудрость"],
+      "category": "magic",
+      "priority_group": "core_magic",
+      "description": "Базовый магический навык для развития магического билда.",
+      "tags": ["magic", "casting", "core"],
+      "perk_slots": []
+    },
+    {
+      "id": "destruction_magic",
+      "name_ru": "Магия Разрушения",
+      "aliases": ["Магия Разрушения"],
+      "category": "magic",
+      "priority_group": "core_magic_school",
+      "description": "Школа магии для урона и агрессивного магического стиля.",
+      "tags": ["magic", "damage", "school"],
+      "perk_slots": []
+    },
+    {
+      "id": "light_magic",
+      "name_ru": "Магия Света",
+      "aliases": ["Магия Света"],
+      "category": "magic",
+      "priority_group": "core_magic_school",
+      "description": "Школа магии усилений и поддержки армии.",
+      "tags": ["magic", "buff", "school"],
+      "perk_slots": []
+    },
+    {
+      "id": "dark_magic",
+      "name_ru": "Магия Тьмы",
+      "aliases": ["Магия Тьмы"],
+      "category": "magic",
+      "priority_group": "core_magic_school",
+      "description": "Школа магии ослаблений и контроля.",
+      "tags": ["magic", "debuff", "school"],
+      "perk_slots": []
+    },
+    {
+      "id": "faction_skill",
+      "name_ru": "Фракционный навык",
+      "aliases": ["Фракционный навык"],
+      "category": "faction",
+      "priority_group": "faction",
+      "description": "Специальный навык фракции героя.",
+      "tags": ["faction", "core"],
+      "perk_slots": []
+    }
+  ]

@@ -1,1 +1,20 @@
-{}
+[
+    {
+      "id": "generic_might_hero",
+      "name_ru": "Неизвестный воин",
+      "class_name": "Воин",
+      "faction": "Неизвестно",
+      "archetype": "might",
+      "starting_skills": [],
+      "specialization": "Техническая запись для MVP"
+    },
+    {
+      "id": "generic_magic_hero",
+      "name_ru": "Неизвестный маг",
+      "class_name": "Маг",
+      "faction": "Неизвестно",
+      "archetype": "magic",
+      "starting_skills": [],
+      "specialization": "Техническая запись для MVP"
+    }
+  ]
