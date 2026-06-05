@@ -1,0 +1,8 @@
+{
+    "case_id": "skill_pick_case_03",
+    "description": "Воин без сильной синергии должен предпочесть базовый core skill",
+    "archetype": "might",
+    "current_skills": ["Лидерство"],
+    "offered_skills": ["Оборона", "Мудрость", "Магия Света"],
+    "expected_best": "Оборона"
+  }
