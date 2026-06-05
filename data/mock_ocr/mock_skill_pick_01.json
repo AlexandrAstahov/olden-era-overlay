@@ -1,0 +1,10 @@
+{
+    "screen_type": "skill-pick",
+    "source_file": "skill-pick_2lv.png",
+    "hero_name": "Неизвестный воин",
+    "hero_class": "Воин",
+    "archetype": "might",
+    "current_skills": ["Оборона", "Тактика"],
+    "offered_skills": ["нападение", "лидерство", "мудрость"],
+    "notes": "Это mock OCR output для первого end-to-end теста без реального распознавания"
+  }
