@@ -65,7 +65,7 @@ models/
 *.pt
 *.pth
 
-# Large or personal screenshot dumps (keep structure, ignore bulk)
+# Large or personal screenshot dumps
 assets/screenshots/raw/*
 !assets/screenshots/raw/.gitkeep
 assets/screenshots/labeled/*
